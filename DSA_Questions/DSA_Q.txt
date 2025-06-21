@@ -1,0 +1,31 @@
+Array:-
+// 1D Array
+1) Fill
+2) Found(target) - Linear Search
+3) Max number
+4) ZeroOnecount
+5) Extreme Printing
+6) Swap
+7) Reverse
+8) Sort unique number
+9) SortZeroOne
+10) Shift an Array
+11) Key pair(Two Sum)
+12) Pivot Index
+13) Find out Missing number
+14) Maximum Average Subarray
+15) Sort colors
+16) Sort -ve and +ve numbers(left-> -ve, right-> +ve)
+17) Find Duplicate
+18) Missing element from an array with duplicates
+19) Find first repeating element
+20) common elements in 3 sorted array
+21) Print - wave, sprial matrix
+22) add two numbers represented in array
+23) Factorial of large number
+
+// 2D Array
+1) Search target
+2) Min/Max Value Find out
+3) Print Row/Column/Diagonal - Sum
+4) Transpose
