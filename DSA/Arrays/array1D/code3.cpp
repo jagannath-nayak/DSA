@@ -223,7 +223,7 @@ int main(){
     cout << "Enter the number of elements in the array: ";
     cin >> size;
 
-    int l = 0, h=size-1;
+    //int l = 0, h=size-1;
 
     for(int i = 0; i < size; i++){
         cout << "Enter the element for index: " << i << endl;
@@ -234,9 +234,9 @@ int main(){
     // cout << "Cyclically rotate array by: ";
     // cin >> n;
 
-    // int target;
-    // cout << "Enter the target element: ";
-    // cin >> target;
+    int target;
+    cout << "Enter the target element: ";
+    cin >> target;
 
 
 
@@ -279,7 +279,7 @@ int main(){
 
 // printalltriplets(arr, size, target);
 
-// Threedigitsum(arr, size, target);
+ Threedigitsum(arr, size, target);
 // cout << "Before: " << endl;
 
 // for(int i=0; i < size; i++){
@@ -305,19 +305,19 @@ int main(){
 //     }
 // }
 
-while(l<=h){
-    if(arr[l]==0) l++;
+// while(l<=h){
+//     if(arr[l]==0) l++;
 
-    else if(arr[h]==1) h--;
+//     else if(arr[h]==1) h--;
 
-    else{
-        swap(arr[l], arr[h]);
-    }
-}
+//     else{
+//         swap(arr[l], arr[h]);
+//     }
+// }
 
-for(int i=0; i<size; i++){
-    cout << arr[i] << " ";
-}
+// for(int i=0; i<size; i++){
+//     cout << arr[i] << " ";
+// }
 
 
 }
