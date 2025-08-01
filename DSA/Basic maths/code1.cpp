@@ -25,6 +25,8 @@ vector<bool> sieve(int n){
     return prime;
 }
 
+
+
 int main(){
     // cout << slowExponentiation(5, 4) << endl;
     vector<bool> prime = sieve(25);
