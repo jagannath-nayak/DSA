@@ -33,6 +33,27 @@ int pow(int n){
     return finalans;
 }
 
+int fib(int n){
+    // Base case
+    if(n==0 || n==1) return n; 
+    // Recursive relation
+    // fib(n) = fib(n-1) + fib(n-2)
+    int ans = fib(n-1) + fib(n-2);
+    return ans;
+    // Processing
+
+}
+
+int getsum(int n){
+    // Base case 
+    if(n==0) return 0;
+    // Recursive relation
+    // getsum(n) = getsum(n-1) + n
+    int ans = getsum(n-1) + n;
+    return ans;
+    // Processing
+}
+
 int main(){
    int n;
    cout << "Enter the value of n: ";
@@ -42,8 +63,9 @@ int main(){
    //cout << "Factorial of " << n << " " << "=" << " " << ans << endl;
   //printcounting(n);
 
-  cout << pow(n);
-
+  // cout << pow(n);
+ // cout << fib(n) << endl;
+ cout << getsum(n);
 
     return 0;
 }
