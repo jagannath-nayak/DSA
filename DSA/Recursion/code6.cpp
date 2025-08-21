@@ -19,14 +19,33 @@ int PaintWays(int n, int k){
     return ans;
 }
 
+void stringPermutations(string str, int i){
+    // Base case
+    if(i >= str.length()){
+        cout << str << endl;
+        return;
+    }
+    // Ek case mai solve karunga
+    for(int j=i; j<str.length(); j++){
+        swap(str[i], str[j]);
+
+    // Baki recursion dekh lega
+    stringPermutations(str, i+1);    
+    }
+}
+
 int main(){
     // int n = 3;
     // cout << solve(n) << endl;
 
-    int n = 3;
-    int k = 3;
-    int ans = PaintWays(n,k);
-    cout << ans << endl;
+    // int n = 3;
+    // int k = 3;
+    // int ans = PaintWays(n,k);
+    // cout << ans << endl;
+
+    string str = "abc";
+    int i = 0;
+    stringPermutations(str, i);
 
 
     return 0;
