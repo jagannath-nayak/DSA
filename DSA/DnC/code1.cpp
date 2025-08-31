@@ -86,38 +86,38 @@ void MergeSort(int arr[], int s, int e){
 }
 
 int main(){
-    // int arr[] = {20,40,60,80,90,100};
-    // int arrSize = 6;
+    int arr[] = {20,40,60,80,90,100};
+    int arrSize = 6;
 
-    // int brr[] = {10,30,50,70};
-    // int brrSize = 4;
+    int brr[] = {10,30,50,70};
+    int brrSize = 4;
 
-    // vector<int> ans;
-    // MergeSortedArrays(arr, arrSize, brr, brrSize, ans);
+    vector<int> ans;
+    MergeSortedArrays(arr, arrSize, brr, brrSize, ans);
 
-    // // print
-    // for(auto k: ans){
-    //     cout << k << " ";
+    // print
+    for(auto k: ans){
+        cout << k << " ";
+    }
+
+    // int arr[] = {10,80,110,90,50,30,40,20};
+    // int size = 8;
+    // int s = 0;
+    // int e = size-1;
+
+    // cout << "Before: " << endl;
+    // for(auto i: arr){
+    //     cout << i << " ";
     // }
+    // cout << endl;
 
-    int arr[] = {10,80,110,90,50,30,40,20};
-    int size = 8;
-    int s = 0;
-    int e = size-1;
+    // MergeSort(arr, s, e);
 
-    cout << "Before: " << endl;
-    for(auto i: arr){
-        cout << i << " ";
-    }
-    cout << endl;
-
-    MergeSort(arr, s, e);
-
-    cout << "After: " << endl;
-    for(auto i: arr){
-        cout << i << " ";
-    }
-    cout << endl;
+    // cout << "After: " << endl;
+    // for(auto i: arr){
+    //     cout << i << " ";
+    // }
+    // cout << endl;
 
 
 
