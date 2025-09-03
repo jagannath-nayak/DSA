@@ -114,8 +114,24 @@ void DeletefromLL(int position, Node* &head, Node* &tail){
     }
     else{ 
         // multiple nodes in LL
-        
-        
+        if(position == 1){
+            Node* temp = head;
+            head = temp->next;
+            temp->next = NULL;
+            delete temp;
+        }
+        else{
+            // delete any other node except first one
+            Node* prev = head;
+            for(int i=0; i<position-2; i++){
+                prev = prev->next;
+            }
+            Node* curr = prev->next;
+            Node* forward = curr->next;
+            prev->next = forward;
+            curr->next = NULL;
+            delete curr;
+        }
     }
 }
 
@@ -134,9 +150,9 @@ int main(){
     Node* tail = NULL;
 
     insertAttail(101, head, tail);
-    //print(head);
+    print(head);
     insertAttail(201, head, tail);
-    //print(head);
+    print(head);
     insertAttail(301, head, tail);
     print(head);
     insertAtPosition(1, 40, head, tail);
@@ -145,7 +161,13 @@ int main(){
     print(head);
     insertAtPosition(3, 420, head, tail);
     print(head);
-    cout<< SearchLL(101, head);
+    // cout<< SearchLL(101, head);
+    DeletefromLL(1, head, tail);
+    print(head);
+    DeletefromLL(3, head, tail);
+    print(head);
+    DeletefromLL(4, head, tail);
+    print(head);
 
 
     return 0;
